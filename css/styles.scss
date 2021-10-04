@@ -822,4 +822,9 @@ header{
   .banner__pag-line{
     left: calc( ( 100vw - 1320px ) / 2 + 1350px);   
   }
+
+  .tours__preview{
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
