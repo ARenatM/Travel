@@ -169,7 +169,7 @@ header{
   display: flex;
   padding-top: 250px;
   padding-bottom: 50px;
-  background: url(/src/main.jpg) center no-repeat;
+  background: url(../src/main.jpg) center no-repeat;
   color: #fff;
 
   &__wrap{
@@ -393,7 +393,7 @@ header{
 .footer{
   position: relative;
 
-  background: url(/src/footer.jpg) no-repeat center;
+  background: url(../src/footer.jpg) no-repeat center;
   background-size: auto 100%;
   padding-top: 271px;
 
