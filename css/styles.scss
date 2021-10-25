@@ -159,9 +159,40 @@ header{
 }
 
 .search{
-  &__block{
-    display: none;
+  display: flex;
+  padding-bottom: 12px;
+  &__field{
+    width: 0px;
+    padding-left: 10px;
+    background-color: transparent;
+    border: 1px white solid;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 16px;
+    outline: none;
+    transform: scale(0);
+    transition: .2s linear;
   }
+  &__field::placeholder{
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  &:hover &__field{
+    width: 200px;
+    transform: scale(1);
+  }
+  &__field:focus{
+    width: 200px;
+    transform: scale(1);
+  }
+
 }
 
 .banner{
@@ -199,6 +230,7 @@ header{
   &__item{
     display: flex;
     justify-content: flex-end;
+    color: #fff;
   }
 
   &__item:nth-child(1){
@@ -497,6 +529,22 @@ header{
 @media (max-width:1250px) {
   .container{
     width: 960px;
+  }
+
+  .search{
+    position: relative;
+
+    &__field{
+      position: absolute;
+      background-color: #fff;
+      color: #333;
+      right: 40px;
+      top: 2px;
+    }
+
+    &__field::placeholder{
+      color: #333;
+    }
   }
 
   .banner__title{
